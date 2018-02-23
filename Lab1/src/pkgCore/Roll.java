@@ -7,12 +7,22 @@ public class Roll {
 	private int Score;
 
 	public Roll() {
+		d1 = new Die();
+		d2 = new Die();
+		Score = d1.getDieValue() + d2.getDieValue();
 		// TODO: Create an instance of d1 and d2...
 		// TODO: Determine 'Score'
 	}
-
+	
+	
+	
 	public int getScore() {
 		return Score;
 	}
-
+	public boolean isSeven() {
+			return (Score == 7? true:false);
+		}
+	
+	
 }
+
